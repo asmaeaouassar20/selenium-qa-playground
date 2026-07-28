@@ -1,0 +1,10 @@
+# WebDriver
+WebDriver, c'est l'API de Selenium qui permet de contrôler automatiquement un navigateur (Chrome, Firefox, Edge, etc.) pour simuler les actions d'un utilisateur (cliquer, saisir du texte, naviguer...).  
+<a href="https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.45.0" >Selenium Java</a>
+
+# JUnit Jupiter API
+JUnit Jupiter API est l'API de JUnit 5 qui permet d'écrire et d'exécuter des tests unitaires en Java.
+<a href="https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api/6.1.1" >JUnit Jupiter API </a>
+
+# Some results
+![img.png](img.png)
