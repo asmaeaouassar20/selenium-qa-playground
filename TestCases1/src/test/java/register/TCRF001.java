@@ -6,11 +6,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
+
 
 public class TCRF001 {
-    public static void main(String[] args) {
+    @Test
+    public void registerAccount(){
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://automationexercise.com/signup");
@@ -27,7 +31,7 @@ public class TCRF001 {
         inputName.sendKeys("asmae");
 
         WebElement emailInput = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[3]"));
-        emailInput.sendKeys("asmae1@gmail.com");
+        emailInput.sendKeys("asmae3@gmail.com");
 
         WebElement signupBtn = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/button"));
         signupBtn.click();
@@ -120,11 +124,17 @@ public class TCRF001 {
         String actualPageTitle = driver.getTitle();
         String expectedPageTitle = "Automation Exercise";
 
+        /*
         if(actualPageTitle.equals(expectedPageTitle)){
             System.out.println("User has successfully navigated to expected page");
         }else{
             System.out.println("User has not navigated to expected page. Hence Failed");
-        }
+        }*/
+
+        // exemple d'utilisation de testNG
+        assertTrue(actualPageTitle.equals(expectedPageTitle));
+        // or
+        assertEquals(actualPageTitle,expectedPageTitle);
 
         driver.quit();
 

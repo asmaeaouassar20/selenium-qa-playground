@@ -11,4 +11,5 @@ JUnit Jupiter API est l'API de JUnit 5 qui permet d'écrire et d'exécuter des t
 
 # testNG
 TestNG sert à automatiser les tests en Java (tests unitaires et d'intégration) et à organiser, exécuter et générer des rapports de tests.
-<a href="https://mvnrepository.com/artifact/org.testng/testng/7.12.0">testNG 7</a>
+<a href="https://mvnrepository.com/artifact/org.testng/testng/7.12.0">testNG 7</a>  
+Je l'ai utilisé dans ce code pour se débarrasser des conditions if/else
