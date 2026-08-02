@@ -11,6 +11,8 @@ import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
+import java.util.Date;
+
 
 public class TCRF001 {
     @Test
@@ -31,7 +33,10 @@ public class TCRF001 {
         inputName.sendKeys("asmae");
 
         WebElement emailInput = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[3]"));
-        emailInput.sendKeys("asmae3@gmail.com");
+        Date date = new Date(); // utiliser le timestamp pour générer une adresse email
+        String generatedEmail = date.toString().replace(" ", "_").replace(":","_")+"@gmail.com";
+        emailInput.sendKeys(generatedEmail);
+        System.out.println(" ==> Email utilisé : "+generatedEmail);
 
         WebElement signupBtn = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/button"));
         signupBtn.click();
