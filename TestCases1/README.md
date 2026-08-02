@@ -1,6 +1,6 @@
 # Demos
-* <a href="https://www.youtube.com/watch?v=K0AKYvGro68" >Registration</a>
-* 
+* <a href="https://www.youtube.com/watch?v=K0AKYvGro68" >Registration Test</a>
+* <a href="https://www.youtube.com/watch?v=v5faQmovugo&list=PLGF1xcxBG5GU" >Login Test</a>
 
 # WebDriver
 WebDriver, c'est l'API de Selenium qui permet de contrôler automatiquement un navigateur (Chrome, Firefox, Edge, etc.) pour simuler les actions d'un utilisateur (cliquer, saisir du texte, naviguer...).  
