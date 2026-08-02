@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertTrue;
-
 import java.util.Date;
+import java.util.List;
+
+import static org.testng.AssertJUnit.*;
 
 
 public class TCRF001 {
@@ -143,5 +143,30 @@ public class TCRF001 {
 
         driver.quit();
 
+    }
+
+    @Test
+    public void login(){
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://automationexercise.com/login");
+
+        WebElement emailLoginInput = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/input[2]"));
+        emailLoginInput.sendKeys("jilali@gmail.com");
+
+        WebElement passwordLoginInput = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/input[3]"));
+        passwordLoginInput.sendKeys("jilali");
+
+        WebElement loginBtn = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/button"));
+        loginBtn.click();
+
+        String  expectedTitle= "Automation Exercise";
+        assertEquals(expectedTitle , driver.getTitle());
+
+        // vérifier l'existence du lien de déconnexion
+        List<WebElement> logoutLinks = driver.findElements(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a"));
+        assertFalse(logoutLinks.isEmpty());
+
+        driver.quit();
     }
 }
