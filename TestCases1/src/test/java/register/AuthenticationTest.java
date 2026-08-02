@@ -14,7 +14,7 @@ import java.util.List;
 import static org.testng.AssertJUnit.*;
 
 
-public class TCRF001 {
+public class AuthenticationTest {
     @Test
     public void registerAccount(){
         WebDriver driver = new ChromeDriver();
