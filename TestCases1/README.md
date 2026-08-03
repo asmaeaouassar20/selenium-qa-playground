@@ -2,6 +2,10 @@
 * <a href="https://www.youtube.com/watch?v=K0AKYvGro68" >Registration Test</a>
 * <a href="https://www.youtube.com/watch?v=v5faQmovugo&list=PLGF1xcxBG5GU" >Login Test</a>
 
+# Sites Utilisés
+* <a href="https://automationexercise.com/" > https://automationexercise.com/ </a>
+* <a href="https://letcode.in/edit"> https://letcode.in/edit </a>
+
 # WebDriver
 WebDriver, c'est l'API de Selenium qui permet de contrôler automatiquement un navigateur (Chrome, Firefox, Edge, etc.) pour simuler les actions d'un utilisateur (cliquer, saisir du texte, naviguer...).  
 <a href="https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.45.0" >Selenium Java</a>
