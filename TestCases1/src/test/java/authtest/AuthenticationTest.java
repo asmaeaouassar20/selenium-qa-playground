@@ -3,6 +3,7 @@ package authtest;
 // Test Case Register Functionality 001
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -166,6 +167,36 @@ public class AuthenticationTest {
         // vérifier l'existence du lien de déconnexion
         List<WebElement> logoutLinks = driver.findElements(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a"));
         assertFalse(logoutLinks.isEmpty());
+
+        driver.quit();
+    }
+
+    @Test
+    public void verifyDisplayingAlreadyExistEmailMsgError(){
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://automationexercise.com/");
+
+        WebElement signupLoginLink = driver.findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a"));
+        signupLoginLink.click();
+
+        WebElement signupBtn = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/button"));
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center' });" , signupBtn);
+
+        WebElement nameInput = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[2]"));
+        WebElement emailInput = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[3]"));
+
+        nameInput.sendKeys("jilali");
+        emailInput.sendKeys("jilali@gmail.com");
+        signupBtn.click();
+
+        // block to display already exist email msg
+        WebElement MsgErrorEmail = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/p"));
+        String expectedMsg = "Email Address already exist!";
+        String actualMsgError = MsgErrorEmail.getText();
+        assertEquals(actualMsgError,expectedMsg);
 
         driver.quit();
     }
