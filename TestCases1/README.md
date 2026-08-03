@@ -3,7 +3,7 @@
 * <a href="https://www.youtube.com/watch?v=v5faQmovugo&list=PLGF1xcxBG5GU" >Login Test</a>
 * <a href="https://www.youtube.com/watch?v=7jrg4bm6IO0" >Manipuler Inputs</a>
 * <a href="https://www.youtube.com/watch?v=R0Hwc1OZTP8" > Display "already exist email" message </a>
-
+* <a href="https://www.youtube.com/watch?v=BpZDGkcwD1I" > Redirection vers la chaîne YouTube </a>
 
 # Sites Utilisés
 * <a href="https://automationexercise.com/" > https://automationexercise.com/ </a>
