@@ -2,6 +2,8 @@
 * <a href="https://www.youtube.com/watch?v=K0AKYvGro68" >Registration Test</a>
 * <a href="https://www.youtube.com/watch?v=v5faQmovugo&list=PLGF1xcxBG5GU" >Login Test</a>
 * <a href="https://www.youtube.com/watch?v=7jrg4bm6IO0" >Manipuler Inputs</a>
+* <a href="https://www.youtube.com/watch?v=R0Hwc1OZTP8" > Display "already exist email" message </a>
+
 
 # Sites Utilisés
 * <a href="https://automationexercise.com/" > https://automationexercise.com/ </a>
