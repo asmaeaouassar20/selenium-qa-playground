@@ -1,4 +1,4 @@
-package register;
+package authtest;
 
 // Test Case Register Functionality 001
 
