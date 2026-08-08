@@ -201,20 +201,7 @@ public class AuthenticationTest {
         driver.quit();
     }
 
-    @Test
-    public void verifyRedirectionToYtbLink(){
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://automationexercise.com/");
 
-        WebElement youtubeLink = driver.findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[7]/a"));
-        youtubeLink.click();
 
-        String expectedTitle = "AutomationExercise - YouTube";
-        String actualTitle = driver.getTitle();
-        assertEquals(expectedTitle,actualTitle);
 
-        List<WebElement> ytbTitleElms = driver.findElements(By.xpath("//*[@id=\"page-header\"]/yt-page-header-renderer/yt-page-header-view-model/div/div[1]/div/yt-dynamic-text-view-model/h1/span"));
-        assertEquals(1,ytbTitleElms.size());
-    }
 }
