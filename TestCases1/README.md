@@ -7,10 +7,11 @@
 * <a href="https://www.youtube.com/watch?v=TmODjZ-SnYU" > manipuler les boutons </a>
 * <a href="https://www.youtube.com/watch?v=qiEwMdm2BVY"> Test navigation </a>
 * <a href="https://www.youtube.com/watch?v=ePl_QN-wjds" > Test Alert </a>
+* <a href="https://www.youtube.com/watch?v=vuCAMUoATjM" > Test Dropdown </a>
 
 # Sites Utilisés
 * <a href="https://automationexercise.com/" > https://automationexercise.com/ </a>
-* <a href="https://letcode.in/edit"> https://letcode.in/edit </a>
+* <a href="https://letcode.in/test"> https://letcode.in/test </a>
 * <a href="https://the-internet.herokuapp.com/javascript_alerts"> https://the-internet.herokuapp.com/javascript_alerts </a>
 
 # WebDriver
