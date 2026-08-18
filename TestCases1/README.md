@@ -13,7 +13,7 @@
 * <a href="https://automationexercise.com/" > https://automationexercise.com/ </a>
 * <a href="https://letcode.in/test"> https://letcode.in/test </a>
 * <a href="https://the-internet.herokuapp.com/javascript_alerts"> https://the-internet.herokuapp.com/javascript_alerts </a>
-* <a href="https://demo.nopcommerce.com/" > https://demo.nopcommerce.com/</a>
+* <a href="https://demoqa.com/checkbox" > https://demoqa.com/checkbox </a>
 
 # WebDriver
 WebDriver, c'est l'API de Selenium qui permet de contrôler automatiquement un navigateur (Chrome, Firefox, Edge, etc.) pour simuler les actions d'un utilisateur (cliquer, saisir du texte, naviguer...).  
