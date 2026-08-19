@@ -11,9 +11,10 @@
 
 # Sites Utilisés
 * <a href="https://automationexercise.com/" > https://automationexercise.com/ </a>
-* <a href="https://letcode.in/test"> https://letcode.in/test </a>
+* <a href="https://letcodein.in/test"> https://letcodein.in/test </a>
 * <a href="https://the-internet.herokuapp.com/javascript_alerts"> https://the-internet.herokuapp.com/javascript_alerts </a>
 * <a href="https://demoqa.com/checkbox" > https://demoqa.com/checkbox </a>
+* <a href="https://letcodein.in/alert" > https://letcodein.in/alert </a>
 
 # WebDriver
 WebDriver, c'est l'API de Selenium qui permet de contrôler automatiquement un navigateur (Chrome, Firefox, Edge, etc.) pour simuler les actions d'un utilisateur (cliquer, saisir du texte, naviguer...).  
@@ -32,7 +33,7 @@ TestNG sert à automatiser les tests en Java (tests unitaires et d'intégration)
 Je l'ai utilisé dans ce code pour se débarrasser des conditions if/else
 
 # practice
-<a href="https://letcode.in/button" > manipulate buttons </a>
+<a href="https://letcodein.in/button" > manipulate buttons </a>
 
 # méthodes d’état (ou de vérification d’état) d’un élément WebElement.
 - **isDisplayed()** → élément visible
